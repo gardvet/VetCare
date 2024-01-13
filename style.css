@@ -58,3 +58,17 @@ button {
     text-transform: uppercase;
     
 }
+
+#imagem {
+    display: flex;
+    width: 42.0rem;
+    height: 24.0rem;
+    margin-bottom: 2rem;
+    filter: drop-shadow(10px 0 30px rgba(0, 165, 14, 0.678));
+}
+
+#caixas {
+    width: 32.7rem;
+    height: 47rem;
+    margin-inline: auto;
+}
