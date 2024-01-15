@@ -8,6 +8,7 @@
     --paragraph: hsl(210, 9%, 31%); 
     --brand-beige: hsl(39, 100%, 97%);
     --brand-light: hsl(148, 23%, 89%);
+    --nav-height: 7.2rem;
     font-size: 62.5%;
 }
 
@@ -23,7 +24,7 @@ para criar um tipo de background em parte da página*/
 header::before {
     content: "";
     width: 100vw; /*preencher a largura*/
-    height: 108rem; /*tamanho da altura*/
+    height: calc(108rem + var(--nav-height)); /*tamanho da altura*/
     background-color: var(--brand-light);
     display: block; /*as propriedades abaixo são habilitadas com o block*/
     position: absolute;
@@ -32,17 +33,39 @@ header::before {
     z-index: -1; /*serve para ficar por trás dos objetos da página*/
 }
 
+nav {
+    display: flex;
+    height: var(--nav-height);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
 nav .menu {
     width: 4rem;
     height: 4rem;
+}
 
+.largura {
+    width: 37.5rem;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+nav.largura {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.scroll {
+    background: var(--primary-color);
+    width: 100vw;
 }
 
 header {
-    width: 37.5rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 4.1rem;
+       margin-top: calc(4.1rem + var(--nav-height));
 
 }
 
