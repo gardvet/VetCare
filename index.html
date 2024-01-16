@@ -8,13 +8,22 @@
     <title>VetCare</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onscroll="onScroll()" class="menu-expanded">
+<body onscroll="onScroll()" class="">
 
     <nav id="navega" class="">
 
-        <div class="largura">
+        <div class="wrapper">
+
             <img class="logo" src="./assets/logo.png" alt="logomarca">
-           
+
+            <button onclick="openMenu()" class="open-menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+              
+            <button onclick="closeMenu()" class="close-menu">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+                      
         </div>
 
         <div class="menu">
@@ -39,14 +48,6 @@
             </a>
     
           </div>
-
-          <button class="open-menu">
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
-          <button class="close-menu">
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
 
         </div>
 
