@@ -8,13 +8,46 @@
     <title>VetCare</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onscroll="onScroll()">
+<body onscroll="onScroll()" class="menu-expanded">
 
     <nav id="navega" class="">
 
         <div class="largura">
             <img class="logo" src="./assets/logo.png" alt="logomarca">
-            <img class="menu"src="./assets/cardapio.png" alt="botao de opcoes">
+           
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+
+        <a class="button" href="#">Agende sua consulta</a> 
+
+        <div id="social-links">
+
+            <a href="https://instagram.com/gard_dev" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/gardvet" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/hildegardviana/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+    
+          </div>
+
+          <button class="open-menu">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+          <button class="close-menu">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
         </div>
 
     </nav>
