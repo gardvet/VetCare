@@ -125,11 +125,16 @@ header button {
 
 #imagem {
     display: flex;
-    width: 42.0rem;
-    height: 24.0rem;
+    justify-content: center;
+    align-items: center;
     filter: drop-shadow(10px 0 30px rgba(0, 0, 0, 0.514));
 }
 
+#imagem img {
+    width: 42.0rem;
+    height: 24.0rem;
+
+}
 
 #caixas {
     width: 32.7rem;
@@ -233,4 +238,28 @@ body.menu-expanded .logo,
 body.menu-expanded button {
     position: relative;
     z-index: 100;
+}
+/*############ SERVICES ###############################*/
+#services header h4 {
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0.08rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+}
+
+#services header h2 {
+    font-size: 3rem;
+    line-height: 3.9rem;
+    color: var(--headline);
+    margin-bottom: 6rem;
+}
+
+.card {
+    padding: 2.4rem;
+    text-align: left;
+    background: white;
+    border: 2px solid var(--brand-light);
+    border-radius: .6rem;
 }
