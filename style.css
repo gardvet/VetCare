@@ -9,8 +9,13 @@
     --paragraph: hsl(210, 9%, 31%); 
     --brand-beige: hsl(39, 100%, 97%);
     --brand-light: hsl(148, 23%, 89%);
+    --bg-light: hsl(180, 14%, 97%);
     --nav-height: 7.2rem;
     font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html,
@@ -23,10 +28,16 @@ body {
     font-family: 'Lucida Sans';
     font-size: 1.6rem;
     text-align: center;
+    overflow: overlay;
+    background: var(--bg-light);
 }
 
 ul {
     list-style: none;
+}
+
+section {
+    padding-block: 10rem;
 }
 
 /*O header before quer dizer antes do header esse código serve
@@ -64,6 +75,10 @@ nav .menu {
 }
 .wrapper button {
     font-size: 4rem;
+}
+
+#b2 {
+    font-size: 1.6rem;
 }
 
 nav.wrapper {
@@ -256,10 +271,20 @@ body.menu-expanded button {
     margin-bottom: 6rem;
 }
 
-.card {
+#services .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+#services .card {
     padding: 2.4rem;
     text-align: left;
     background: white;
-    border: 2px solid var(--brand-light);
+    border: 1px solid var(--brand-light);
     border-radius: .6rem;
+}
+
+#services .card h3 {
+    margin-block: 1.6rem;
 }
